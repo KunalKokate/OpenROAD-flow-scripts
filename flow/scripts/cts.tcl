@@ -63,13 +63,13 @@ puts "Repair setup and hold violations..."
 
 # process user settings
 set additional_args ""
-if { [info exists ::env(SETUP_SLACK_MARGIN)] && $::env(SETUP_SLACK_MARGIN) > 0.0} {
-  puts "Setup slack margin $::env(SETUP_SLACK_MARGIN)"
-  append additional_args " -setup_margin $::env(SETUP_SLACK_MARGIN)"
-}
-if { [info exists ::env(HOLD_SLACK_MARGIN)] && $::env(HOLD_SLACK_MARGIN) > 0.0} {
-  puts "Hold slack margin $::env(HOLD_SLACK_MARGIN)"
-  append additional_args " -hold_margin $::env(HOLD_SLACK_MARGIN)"
+
+# Replaced the if loop with for loop to iterate over environment variables.
+foreach var {SETUP_SLACK_MARGIN HOLD_SLACK_MARGIN} {
+  if {[info exists ::env($var)] && $::env($var) > 0.0} {
+    puts "${var} slack margin $::env($var)"
+    append additional_args " -${var:l}_margin $::env($var)"
+  }
 }
 
 repair_timing {*}$additional_args
