@@ -63,7 +63,6 @@ puts "Repair setup and hold violations..."
 
 # process user settings
 set additional_args ""
-
 # Replaced the if loop with for loop to iterate over environment variables.
 foreach var {SETUP_SLACK_MARGIN HOLD_SLACK_MARGIN} {
   if {[info exists ::env($var)] && $::env($var) > 0.0} {
