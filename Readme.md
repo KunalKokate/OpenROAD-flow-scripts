@@ -28,7 +28,7 @@ Operating System - On VSD Cloud Platform
 ### Steps taken: 
 * Login to VSD Cloud Platform
 * Open Terminal >> cd
-* Create a new directory >> mkdir `contest` >> git clone `<forked repo>`
+* Create a new directory >> mkdir `contest` >> git clone `<forked repo from Original OpenROAD flow scripts>` (https://github.com/KunalKokate/OpenROAD-flow-scripts)  
 * Navigate to OpenROAD-flow-scripts/flow/scripts
 * To edit >> Run >> gedit `cts.tcl`
 * Updated the process user settings code `if` loop with `foreach` loop to simplify and optimize the code to see overall runtime improvement.
