@@ -9,6 +9,8 @@ All the parameters to look are highlighted in bold.
 This repository reflects the default and updated performance runtimes of current designs without any changes made. I plan to improve the overall runtime for a design by modifying the Clock Tree Synthesis TCL script.  
 The idea is to modify the OpenROAD scripts for improvement of CTS timings. To do so, I have updated the scripts/cts.tcl file to improve the Overall Performance Elapsed Runtime, CPU User Time, and CTS Elapsed Seconds to run CTS Stage
 
+Quick link to refer the [documentation](https://github.com/KunalKokate/OpenROAD-flow-scripts/tree/7nmcontest/flow/Contest%20Documentation) of the same in PDF format.
+
 Operating System - On VSD Cloud Platform
 
         kunalkokate03@openroad-on-cloud-04:~$ cat /etc/os-release 
