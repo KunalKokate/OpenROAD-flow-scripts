@@ -252,6 +252,10 @@ cp results/asap7/riscv32i/base/6_1_merged.gds results/asap7/riscv32i/base/6_fina
 #### Timing report from 4_1_cts.log
 `Elapsed time: 0:30.24`[h:]min:sec. `CPU time: user 30.12` sys 0.11 (99%). Peak memory: 296780KB.
 
+## Quick links
+* [Logs of unchanged design](https://github.com/KunalKokate/OpenROAD-flow-scripts/tree/7nmcontest/flow/Logs_of%20unchanged_design/logs/asap7)  
+* [Script changes](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/commit/74e54ad036be324b81139d02c42bd494fcf3288a)  
+
 ## Conclusion and Future Scope
 In conclusion, we were able to see the improvement by changing code in the TCL Script of OpenRoAD flow for CTS Stage to see the `Elapsed time of complete RTL to GDSII runtime`, `CPU user time` & `CTS Elapsed seconds`. Also, the timing reports from the `logs/asap7/<design>/base/4_1_cts.log` has also indicated the considerable improvement in the `CTS Elapsed Time` & `CPU time`.
 There is huge scope for OpenROAD Design Flow Scripts in improvements of the designs flow in each stage and overall flow by optimizing the code complexity and reliability.
