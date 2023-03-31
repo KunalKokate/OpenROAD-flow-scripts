@@ -1,7 +1,6 @@
-# Designs ran on ASAP7 PDK Platform to demonstrate fastest Overall Runtime and CTS stage timing improvement
-
+# Timing Improvement for CTS Stage and Overall RTL to GDSII flow on ASAP7 PDK
 ### Aim: 
-To improve the timing parameters below by making changes in CTS script:
+To demonstrate fastest runtime for overall RTL to GDSII flow and improve the timing parameters below by making changes in CTS script:
 1.	Overall Performance Elapsed Runtime
 2.	CPU User Time
 3.	CTS Elapsed Seconds taken to run CTS Stage
