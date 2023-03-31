@@ -1,4 +1,4 @@
-# Designs ran on ASAP7 PDK Platform to demonstrate fastest Runtime with CTS improvement
+# Designs ran on ASAP7 PDK Platform to demonstrate fastest Overall Runtime and CTS stage timing improvement
 
 ### Aim: 
 To improve the timing parameters below by making changes in CTS script:
