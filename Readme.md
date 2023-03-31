@@ -9,6 +9,22 @@ All the parameters to look are highlighted in bold.
 This repository reflects the default and updated performance runtimes of current designs without any changes made. I plan to improve the overall runtime for a design by modifying the Clock Tree Synthesis TCL script.  
 The idea is to modify the OpenROAD scripts for improvement of CTS timings. To do so, I have updated the scripts/cts.tcl file to improve the Overall Performance Elapsed Runtime, CPU User Time, and CTS Elapsed Seconds to run CTS Stage
 
+Operating System - On VSD Cloud Platform
+
+        kunalkokate03@openroad-on-cloud-04:~$ cat /etc/os-release 
+        NAME="Ubuntu"
+        VERSION="18.04.6 LTS (Bionic Beaver)"
+        ID=ubuntu
+        ID_LIKE=debian
+        PRETTY_NAME="Ubuntu 18.04.6 LTS"
+        VERSION_ID="18.04"
+        HOME_URL="https://www.ubuntu.com/"
+        SUPPORT_URL="https://help.ubuntu.com/"
+        BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+        PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+        VERSION_CODENAME=bionic
+        UBUNTU_CODENAME=bionic
+
 ### Steps taken: 
 * Login to VSD Cloud Platform
 * Open Terminal >> cd
@@ -236,3 +252,10 @@ cp results/asap7/riscv32i/base/6_1_merged.gds results/asap7/riscv32i/base/6_fina
 #### Timing report from 4_1_cts.log
 `Elapsed time: 0:30.24`[h:]min:sec. `CPU time: user 30.12` sys 0.11 (99%). Peak memory: 296780KB.
 
+## Conclusion and Future Scope
+In conclusion, we were able to see the improvement by changing code in the TCL Script of OpenRoAD flow for CTS Stage to see the `Elapsed time of complete RTL to GDSII runtime`, `CPU user time` & `CTS Elapsed seconds`. Also, the timing reports from the `logs/asap7/<design>/base/4_1_cts.log` has also indicated the considerable improvement in the `CTS Elapsed Time` & `CPU time`.
+There is huge scope for OpenROAD Design Flow Scripts in improvements of the designs flow in each stage and overall flow by optimizing the code complexity and reliability.
+
+## Acknowledgement
+1. OpenROAD Team
+2. VSD (VLSI System Design Corporation Pvt. Ltd) and UCSD (University of California, San Deigo)
