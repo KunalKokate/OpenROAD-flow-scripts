@@ -1,0 +1,158 @@
+OpenROAD v2.0-6566-g970f89da6 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 13178, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 13211, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 13244, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 13277, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 13310, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 13343, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 13376, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 14772, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 14805, timing group from output port.
+[WARNING STA-0164] ./platforms/asap7/lib/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz line 14838, timing group from output port.
+HierRTLMP Flow enabled...
+Call Macro Placer  -max_num_inst 10000 -min_num_inst 5000 -max_num_macro 4 -min_num_macro 1 -halo_width 10 -report_directory ./objects/asap7/riscv32i/base/rtlmp
+[INFO MPL-2023] Floorplan Outline: (0.0, 0.0) (120.0, 120.0),  Core Outline: (5 5 109 109)
+[INFO MPL-0402] Traversed logical hierarchy
+	Number of std cell instances : 9156
+	Area of std cell instances : 1069.3212
+	Number of macros : 4
+	Area of macros : 1100.752
+	Total area : 2170.0732
+	Design Utilization : 0.20063546
+	Core Utilization: 0.11006627
+
+num level: 2, max_macro: 40, min_macro: 10, max_inst:100000, min_inst:50000
+
+
+Print Physical Hierachy Tree
+
+root  (0)  num_macro :  4   num_std_cell :  9156  macro_area :  1100.752  std_cell_area : 1069.3212
+
++----B0  (10)  num_macro :  0   num_std_cell :  0  macro_area :  0.0  std_cell_area : 0.0
+
++----B1  (11)  num_macro :  0   num_std_cell :  0  macro_area :  0.0  std_cell_area : 0.0
+
++----B2  (12)  num_macro :  0   num_std_cell :  0  macro_area :  0.0  std_cell_area : 0.0
+
++----boot  (13)  num_macro :  0   num_std_cell :  16  macro_area :  0.0  std_cell_area : 1.48716
+
++----dmem  (14)  num_macro :  4   num_std_cell :  15  macro_area :  1100.752  std_cell_area : 1.5163199
+
++----pcmux  (15)  num_macro :  0   num_std_cell :  65  macro_area :  0.0  std_cell_area : 6.0944405
+
++----riscv  (16)  num_macro :  0   num_std_cell :  9058  macro_area :  0.0  std_cell_area : 1060.0774
+
++----(root)_glue_logic  (17)  num_macro :  0   num_std_cell :  2  macro_area :  0.0  std_cell_area : 0.1458
+
+
+
+Print Physical Hierachy Tree after splitting std cell and macros in leaf clusters
+
+root  (0)  num_macro :  4   num_std_cell :  9156  macro_area :  1100.752  std_cell_area : 1069.3212
+
++----B0  (10)  num_macro :  0   num_std_cell :  0  macro_area :  0.0  std_cell_area : 0.0
+
++----B1  (11)  num_macro :  0   num_std_cell :  0  macro_area :  0.0  std_cell_area : 0.0
+
++----B2  (12)  num_macro :  0   num_std_cell :  0  macro_area :  0.0  std_cell_area : 0.0
+
++----boot  (13)  num_macro :  0   num_std_cell :  16  macro_area :  0.0  std_cell_area : 1.48716
+
++----dmem  (14)  num_macro :  0   num_std_cell :  15  macro_area :  0.0  std_cell_area : 1.5163199
+
++----pcmux  (15)  num_macro :  0   num_std_cell :  65  macro_area :  0.0  std_cell_area : 6.0944405
+
++----riscv  (16)  num_macro :  0   num_std_cell :  9058  macro_area :  0.0  std_cell_area : 1060.0774
+
++----(root)_glue_logic  (17)  num_macro :  0   num_std_cell :  2  macro_area :  0.0  std_cell_area : 0.1458
+
++----dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3  (18)  num_macro :  4   num_std_cell :  0  macro_area :  1100.752  std_cell_area : 0.0
+
+Calculate the possible shapes for hard macro cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+Finished  Shaping -- Macro Tilings.
+
+Creating the pin blockage for root cluster
+Pin access for root cluster
+Pin access for L : length : 5.13, depth :  6.5223236
+Pin access for R : length : 5.13, depth : 6.5223236
+Pin access for B : length : 104.088, depth : 9.351463
+Finished creating Pin blockages.
+
+[MultiLevelMacroPlacement] working on children of cluster root
+[MultiLevelMacroPlacement] lx = 5.022, ly = 5.13, ux = 104.976, uy = 104.76
+[MultiLevelMacroPlacement] Finish calculating connection
+[MultiLevelMacroPlacement] Finish updating dataflow
+[MultiLevelMacroPlacement] Start Simulated Annealing Core
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 1, target_util = 0.5, target_dead_space = 0.25
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 2, target_util = 0.5, target_dead_space = 0.3
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 3, target_util = 0.5, target_dead_space = 0.35
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 4, target_util = 0.5, target_dead_space = 0.4
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 5, target_util = 0.5, target_dead_space = 0.45
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 6, target_util = 0.5, target_dead_space = 0.5
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 7, target_util = 0.5, target_dead_space = 0.55
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 8, target_util = 0.5, target_dead_space = 0.6
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 9, target_util = 0.5, target_dead_space = 0.65
+[ShapeChildrenCluster] hard_macro_cluster : dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+ ( 96.72 , 87.2 ) 
+
+
+[MultiLevelMacroPlacement] Finish generating shapes for children of cluster root
+sa_id = 10, target_util = 0.5, target_dead_space = 0.70000005
+[MultiLevelMacroPlacement] Finish Simulated Annealing Core
+[MultiLevelMacroPlacement] Finish Simulated Annealing for cluster root
+[Hier-RTLMP::HardMacroClusterMacroPlacement] Place macros in cluster dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+[HierRTLMP:HardMacroClusterMacroPlacement] Summary of macro placement for cluster dmem/dmem0||dmem/dmem1||dmem/dmem2||dmem/dmem3
+Finished Multi-level Macro Placement.
+
+number of updated macros : 4
+number of macros in HardMacroCluster : 4
+Delete buffers for RTLMP flow...
+[INFO RSZ-0026] Removed 0 buffers.
+Elapsed time: 2:30.82[h:]min:sec. CPU time: user 1006.77 sys 0.13 (667%). Peak memory: 215444KB.
